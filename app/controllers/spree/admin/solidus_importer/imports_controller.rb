@@ -32,7 +32,7 @@ module Spree
         end
 
         def permitted_resource_params
-          params.require(:solidus_importer_import).permit(:file, :import_type)
+          params.require(:solidus_importer_import).permit(:file, :file_url, :import_type)
         end
 
         def assigns_import_types
